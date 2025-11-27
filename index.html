@@ -18,7 +18,6 @@
       text-align: center;
     }
 
-    /* Background */
     .background {
       position: fixed;
       top: 0;
@@ -32,7 +31,6 @@
       z-index: -2;
     }
 
-    /* Snow */
     .snowflake {
       position: fixed;
       top: -10px;
@@ -47,7 +45,6 @@
       100% { transform: translateY(110vh); }
     }
 
-    /* Profile box */
     .profile-container {
       backdrop-filter: blur(10px);
       padding: 30px;
@@ -62,7 +59,6 @@
       to { transform: scale(1); opacity: 1; }
     }
 
-    /* Profile Picture */
     .pfp {
       width: 150px;
       height: 150px;
@@ -92,7 +88,6 @@
 <body>
   <div class="background"></div>
 
-  <!-- Music -->
   <audio autoplay loop>
     <source src="https://codeskulptor-demos.commondatastorage.googleapis.com/descent/background%20music.mp3" type="audio/mpeg">
   </audio>
@@ -103,11 +98,10 @@
     <p>LuaU 2023, Cncs, GameDev</p>
 
     <a href="https://www.instagram.com/actually.alwin/?hl=en">Instagram</a>
-    <a href="YOUR_ROBLOX_LINK">Roblox</a>
+    <a href="https://www.roblox.com/users/6090503989/profile">Roblox</a>
   </div>
 
   <script>
-    // Snow system
     function createSnow() {
       const snow = document.createElement('div');
       snow.classList.add('snowflake');
